@@ -1,0 +1,55 @@
+#+title: @orgajs/next
+#+author: Xiaoxing Hu
+#+options: toc:nil
+
+Use Org mode files in Next.js with Orgajs.
+
+* Installation
+
+#+begin_src bash
+pnpm add @orgajs/next @orgajs/loader @orgajs/react
+#+end_src
+
+You can also use npm or yarn.
+
+* Usage
+
+Create a ~next.config.js~ in your project:
+
+#+begin_src js
+const withOrg = require('@orgajs/next')()
+
+module.exports = withOrg({
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'org'],
+})
+#+end_src
+
+By default, ~@orgajs/next~ matches and compiles files with the ~.org~ extension.
+
+You can pass Org loader options:
+
+#+begin_src js
+const withOrg = require('@orgajs/next')({
+  options: {
+    jsxRuntime: 'automatic',
+  },
+})
+
+module.exports = withOrg()
+#+end_src
+
+* Components
+
+Create an ~org-components.js~ file at your project root to provide global Org components:
+
+#+begin_src js
+export function useOrgComponents() {
+  return {
+    h1: (props) => <h1 style={{ color: 'tomato' }} {...props} />,
+  }
+}
+#+end_src
+
+* License
+
+MIT
