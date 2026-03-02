@@ -4,6 +4,13 @@
 
 Use Org mode files in Next.js with Orgajs.
 
+* Monorepo
+
+This repository is a pnpm workspace.
+
+- Root package: ~@orgajs/next~
+- Example app: ~example~
+
 * Installation
 
 #+begin_src bash
@@ -48,6 +55,20 @@ export function useOrgComponents() {
     h1: (props) => <h1 style={{ color: 'tomato' }} {...props} />,
   }
 }
+#+end_src
+
+* Example
+
+Install workspace dependencies from the repository root:
+
+#+begin_src bash
+pnpm install
+#+end_src
+
+Run the example app:
+
+#+begin_src bash
+pnpm run example:dev
 #+end_src
 
 * License

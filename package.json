@@ -1,63 +1,61 @@
 {
-  "name": "@orgajs/next",
-  "description": "Add support for Org Mode pages in your Next.js app",
-  "version": "7.0.0",
-  "author": "Xiaoxing Hu <hi@xiaoxing.dev>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/orgapp/orga-next.git"
-  },
-  "homepage": "https://github.com/orgapp/orga-next#readme",
-  "keywords": [
-    "nextjs",
-    "next-plugin",
-    "org-mode",
-    "orgajs"
-  ],
-  "bugs": "https://github.com/orgapp/orga-next/issues",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "exports": {
-    ".": "./index.js",
-    "./org-components": "./org-components.js",
-    "./org-import-source": "./org-import-source.js",
-    "./package.json": "./package.json"
-  },
-  "files": [
-    "index.js",
-    "index.d.ts",
-    "org-components.js",
-    "org-import-source.js",
-    "org-js-loader.js",
-    "license.md",
-    "README.org"
-  ],
-  "scripts": {
-    "check": "biome check .",
-    "write": "biome check --write ."
-  },
-  "peerDependencies": {
-    "@orgajs/loader": ">=4.0.0",
-    "@orgajs/react": ">=4.0.0",
-    "next": ">=13.0.0"
-  },
-  "peerDependenciesMeta": {
-    "@orgajs/loader": {
-      "optional": true
-    },
-    "@orgajs/react": {
-      "optional": true
-    }
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "publishConfig": {
-    "provenance": true
-  },
-  "packageManager": "pnpm@10.12.1"
+	"name": "@orgajs/next",
+	"description": "Add support for Org Mode pages in your Next.js app",
+	"version": "7.0.0",
+	"author": "Xiaoxing Hu <hi@xiaoxing.dev>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/orgapp/orga-next.git"
+	},
+	"homepage": "https://github.com/orgapp/orga-next#readme",
+	"keywords": ["nextjs", "next-plugin", "org-mode", "orgajs"],
+	"bugs": "https://github.com/orgapp/orga-next/issues",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": "./index.js",
+		"./org-components": "./org-components.js",
+		"./org-import-source": "./org-import-source.js",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"org-components.js",
+		"org-import-source.js",
+		"org-js-loader.js",
+		"license.md",
+		"README.org"
+	],
+	"scripts": {
+		"check": "biome check .",
+		"write": "biome check --write .",
+		"example:dev": "pnpm --filter orga-next-example dev",
+		"example:build": "pnpm --filter orga-next-example build",
+		"example:start": "pnpm --filter orga-next-example start"
+	},
+	"peerDependencies": {
+		"@orgajs/loader": ">=4.0.0",
+		"@orgajs/react": ">=4.0.0",
+		"next": ">=13.0.0"
+	},
+	"peerDependenciesMeta": {
+		"@orgajs/loader": {
+			"optional": true
+		},
+		"@orgajs/react": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"publishConfig": {
+		"provenance": true
+	},
+	"packageManager": "pnpm@10.12.1"
 }

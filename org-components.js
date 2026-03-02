@@ -1,5 +1,5 @@
 function useOrgComponents() {
-  return {}
+	return {}
 }
 
 exports.useOrgComponents = useOrgComponents
