@@ -35,9 +35,6 @@ jobs:
       - name: Lint and format check
         run: pnpm run check
 
-      - name: Build example
-        run: pnpm run example:build
-
       - name: Verify tag matches package version
         run: |
           VERSION=$(node -p "require('./package.json').version")

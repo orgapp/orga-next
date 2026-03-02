@@ -28,4 +28,4 @@ jobs:
       - name: Lint and format check
         run: pnpm run check
       - name: Build example
-        run: pnpm run example:build
+        run: pnpm --filter orga-next-example build

@@ -68,7 +68,7 @@ pnpm install
 Run the example app:
 
 #+begin_src bash
-pnpm run example:dev
+pnpm --filter orga-next-example dev
 #+end_src
 
 * License

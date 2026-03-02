@@ -29,8 +29,7 @@
 		"README.org"
 	],
 	"scripts": {
-		"check": "biome check .",
-		"dev": "pnpm --filter orga-next-example dev"
+		"check": "biome check ."
 	},
 	"peerDependencies": {
 		"@orgajs/loader": ">=4.0.0",
