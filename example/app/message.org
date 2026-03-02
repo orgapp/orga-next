@@ -1,0 +1,7 @@
+** Org as a Server Component
+
+This page is rendered from an Org file using ~@orgajs/next~.
+
+- Blog page: [[/blog/hello-world][Hello World]]
+- Website: [[https://orga.js.org][orga.js.org]]
+- Repository: [[https://github.com/orgapp/orgajs][github.com/orgapp/orgajs]]

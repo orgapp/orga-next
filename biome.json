@@ -1,7 +1,12 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
 	"files": {
-		"ignore": ["node_modules", ".next", "example/.next"]
+		"ignore": [
+			"node_modules",
+			".next",
+			"example/.next",
+			"example/next-env.d.ts"
+		]
 	},
 	"formatter": {
 		"enabled": true,

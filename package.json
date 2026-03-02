@@ -30,10 +30,7 @@
 	],
 	"scripts": {
 		"check": "biome check .",
-		"write": "biome check --write .",
-		"example:dev": "pnpm --filter orga-next-example dev",
-		"example:build": "pnpm --filter orga-next-example build",
-		"example:start": "pnpm --filter orga-next-example start"
+		"dev": "pnpm --filter orga-next-example dev"
 	},
 	"peerDependencies": {
 		"@orgajs/loader": ">=4.0.0",
