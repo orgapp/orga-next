@@ -1,7 +1,7 @@
 {
 	"name": "@orgajs/next",
 	"description": "Add support for Org Mode pages in your Next.js app",
-	"version": "7.0.0",
+	"version": "8.0.0",
 	"author": "Xiaoxing Hu <hi@xiaoxing.dev>",
 	"license": "MIT",
 	"repository": {
